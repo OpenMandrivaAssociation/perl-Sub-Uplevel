@@ -1,6 +1,6 @@
 %define module  Sub-Uplevel
 %define	name	perl-%{module}
-%define version 0.14
+%define version 0.16
 %define release %mkrel 1
 
 Summary: 	%{module} module for perl
