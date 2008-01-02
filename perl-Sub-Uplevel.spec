@@ -15,6 +15,7 @@ Url:            http://search.cpan.org/dist/%{module}/
 BuildRequires:	perl-devel
 %endif
 BuildArch: 	noarch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description 
 Apparently run a function in a higher stack frame.
