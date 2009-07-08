@@ -1,27 +1,27 @@
-%define module  Sub-Uplevel
-%define	name	perl-%{module}
-%define version 0.18
-%define release %mkrel 2
+%define upstream_name    Sub-Uplevel
+%define upstream_version 0.2002
 
-Summary: 	%{module} module for perl
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
-License: 	GPL or Artistic
+Name: 		perl-%{upstream_name}
+Version: 	%perl_convert_version %{upstream_version}
+Release: 	%mkrel 1
+
+Summary: 	apparently run a function in a higher stack frame
+License: 	GPL+ or Artistic
 Group: 		Development/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sub/%{module}-%{version}.tar.bz2
-Url:            http://search.cpan.org/dist/%{module}/
+Url:        http://search.cpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sub/%{upstream_name}-%{upstream_version}.tar.gz
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
 BuildArch: 	noarch
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description 
 Apparently run a function in a higher stack frame.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
