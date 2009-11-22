@@ -1,5 +1,5 @@
 %define upstream_name    Sub-Uplevel
-%define upstream_version 0.2002
+%define upstream_version 0.22
 
 Name: 		perl-%{upstream_name}
 Version: 	%perl_convert_version %{upstream_version}
@@ -43,5 +43,3 @@ Apparently run a function in a higher stack frame.
 %doc Changes
 %{perl_vendorlib}/Sub
 %{_mandir}/*/*
-
-
