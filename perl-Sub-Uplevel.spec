@@ -3,7 +3,7 @@
 
 Name: 		perl-%{upstream_name}
 Version: 	%perl_convert_version %{upstream_version}
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 
 Summary: 	apparently run a function in a higher stack frame
 License: 	GPL+ or Artistic
