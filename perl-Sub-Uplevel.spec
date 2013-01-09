@@ -1,9 +1,9 @@
 %define upstream_name    Sub-Uplevel
-%define upstream_version 0.22
+%define upstream_version 0.24
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Release:	1
 
 Summary:	Apparently run a function in a higher stack frame
 License:	GPL+ or Artistic
