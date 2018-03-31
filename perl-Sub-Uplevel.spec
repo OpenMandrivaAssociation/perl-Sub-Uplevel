@@ -1,14 +1,13 @@
 %define modname	Sub-Uplevel
-%define modver	0.24
 
 Summary:	Apparently run a function in a higher stack frame
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	11
+Version:	0.2800
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sub/%{modname}-%{modver}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sub/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl-JSON-PP
@@ -17,7 +16,7 @@ BuildRequires:	perl-JSON-PP
 Apparently run a function in a higher stack frame.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%setup -qn %{modname}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
