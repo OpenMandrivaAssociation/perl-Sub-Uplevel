@@ -3,10 +3,10 @@
 Summary:	Apparently run a function in a higher stack frame
 Name:		perl-%{modname}
 Version:	0.2800
-Release:	2
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}/
+Url:		http://metacpan.org/pod/Sub::Uplevel
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sub/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
