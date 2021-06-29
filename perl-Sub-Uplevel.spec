@@ -3,7 +3,7 @@
 Summary:	Apparently run a function in a higher stack frame
 Name:		perl-%{modname}
 Version:	0.2800
-Release:	3
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Sub::Uplevel
@@ -17,7 +17,7 @@ BuildRequires:	perl-JSON-PP
 Apparently run a function in a higher stack frame.
 
 %prep
-%setup -qn %{modname}-%{version}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
