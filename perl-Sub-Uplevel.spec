@@ -3,7 +3,7 @@
 Summary:	Apparently run a function in a higher stack frame
 Name:		perl-%{modname}
 Version:	0.2800
-Release:	6
+Release:	7
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Sub::Uplevel
