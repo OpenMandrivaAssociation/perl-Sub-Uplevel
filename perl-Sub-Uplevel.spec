@@ -6,7 +6,7 @@ Version:	0.2800
 Release:	7
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Sub::Uplevel
+Url:		https://metacpan.org/pod/Sub::Uplevel
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Sub/%{modname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
